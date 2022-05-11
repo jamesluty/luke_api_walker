@@ -55,9 +55,16 @@ span {
 
 .output {
     text-align: left;
-    margin: 0px 39%;
+    margin: 0px 30%;
 }
 
 .img {
     width: 700px;
+}
+
+.homeworldButton {
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 7px 10px;
 }

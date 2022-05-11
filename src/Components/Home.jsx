@@ -11,7 +11,6 @@ const Home = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("clicked")
         navigate("/" + searchType + "/" + idNum);
     }
 
@@ -28,7 +27,7 @@ const Home = () => {
     // }
 
     return (
-        <>
+        <div>
             <h1>Luke APIwalker</h1>
             <div className={styles.searchWrapper}>
                 <form className={styles.form} onSubmit={handleSubmit}>
@@ -36,13 +35,14 @@ const Home = () => {
                     <select className={styles.select} name="select" onChange={e => setSearchType(e.target.value)} value={searchType}>
                         <option className={styles.options} value="people">People</option>
                         <option value="planets">Planets</option>
+                        <option value="starships">Starships</option>
                     </select>
                     <label className={styles.idLabel} htmlFor="">Id: </label>
                     <input className={styles.inputNum} type="number" min="1" max={max} onChange={ e => setIdNum(e.target.value)} value={idNum}/>
                     <button className={styles.button}>Search</button>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 
