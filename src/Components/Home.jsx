@@ -7,24 +7,11 @@ const Home = () => {
     const [searchType, setSearchType] = useState("people");
     const [idNum, setIdNum] = useState(1);
     const navigate = useNavigate();
-    let max;
 
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate("/" + searchType + "/" + idNum);
     }
-
-    // if (searchType === "people"){
-    //     max = 83;
-    //     if(idNum > 83){
-    //         alert("There are only 83 people. Please pick another number");
-    //     }
-    // } else {
-    //     max = 60
-    //     if(idNum > 60){
-    //         alert("There are only 60 planets. Please pick another number");
-    //     }
-    // }
 
     return (
         <div>
@@ -38,7 +25,7 @@ const Home = () => {
                         <option value="starships">Starships</option>
                     </select>
                     <label className={styles.idLabel} htmlFor="">Id: </label>
-                    <input className={styles.inputNum} type="number" min="1" max={max} onChange={ e => setIdNum(e.target.value)} value={idNum}/>
+                    <input className={styles.inputNum} type="number" min="1" onChange={ e => setIdNum(e.target.value)} value={idNum}/>
                     <button className={styles.button}>Search</button>
                 </form>
             </div>
