@@ -1,0 +1,63 @@
+.searchWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.form {
+    align-items: center;
+    background-color: gainsboro;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 570px;
+}
+
+.searchLabel, .idLabel {
+    font-size: 20pt;
+    margin-right: 15px;
+}
+
+.select {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15pt;
+    padding: 3px 10px;
+    margin-right: 30px;
+}
+
+.options {
+    font-size: 15pt;
+    padding: 5px 10px;
+}
+
+.inputNum {
+    border-radius: 5px;
+    font-size: 15pt;
+    margin-right: 20px;
+    padding: 3px 10px;
+    width: 50px;
+}
+
+.button {
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 20px;
+}
+
+/* results page */
+span {
+    font-weight: bold;
+}
+
+.output {
+    text-align: left;
+    margin: 0px 39%;
+}
+
+.img {
+    width: 700px;
+}
